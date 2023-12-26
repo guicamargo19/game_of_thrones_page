@@ -17,7 +17,7 @@
 
     &__logo {
         width: 120px;
-        margin: 0 auto 10px;
+        margin-bottom: 10px;
     }
 
     &__links {
@@ -25,13 +25,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-left: 0;
         
         &__item {
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
             a {
                 text-decoration: none;
-                padding: 8px 16px;
+                padding: 8px;
                 display: block;
                 font-size: 25px;
 

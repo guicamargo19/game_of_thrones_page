@@ -10,9 +10,21 @@
         display: block;
     }
 
+    @media (min-width: $mobile) and (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        padding-top: calc(5.6vw + 25px);
+        margin-top: -25px;
+
+    }
+
     img {
         max-width: 100%;
         width: 90%;
+
+        @media (min-width: $mobile) and (max-width: $tablet) {
+            width: 70%;
+        }
     }
 
     &__text-container {
@@ -21,6 +33,11 @@
 
         h2 {
             margin-bottom: 24px;
+
+            @media (min-width: $mobile) and (max-width: $tablet) {
+                text-align: center;
+                margin-top: 12px;
+            }
         }
 
         p {

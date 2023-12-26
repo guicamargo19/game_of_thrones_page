@@ -11,8 +11,13 @@
     &__container {
         display: flex;
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             padding: 0 12px 0 20px;
+        }
+
+        @media (min-width: $mobile) and (max-width: $tablet) {
+            padding: 0 12px 0 20px;
+            width: 90%;
         }
     }
 
@@ -25,27 +30,40 @@
         @media (max-width: 768px) {
             max-width: 64px;
         }
+
+        @media (min-width: $mobile) and (max-width: $tablet) {
+            max-width: 120px;
+        }
     }
 
     &__links {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+       
         &__item {
             margin: 6px;
             margin-top: 20px;
-        }
-    }
+            
+            @media (min-width: $mobile) and (max-width: $tablet) {
+                margin-top: 0;
+            }
 
-    .button {
-        height: 50px;
-
-        @media (max-width: 768px) {
-            font-size: 13px;
-            padding: 8px 11px;
-            height: 40px;
-            letter-spacing: 0;
+            .button {
+                height: 50px;
+        
+                @media (max-width: 767px) {
+                    font-size: 13px;
+                    padding: 8px 11px;
+                    height: 40px;
+                    letter-spacing: 0;
+                }
+        
+                @media (min-width: $mobile) and (max-width: $tablet) {
+                    font-size: 13px;
+                    font-size: 13px;
+                    height: 40px;
+                    letter-spacing: 0;
+                }
+            }
         }
     }
 }

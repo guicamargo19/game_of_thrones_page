@@ -1,8 +1,17 @@
+@use "variables" as *;
+
 .houses {
     padding: 5.6vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: $mobile) and (max-width: $tablet) {
+        padding: calc(5.6vw + 25px);
+        display: flex;
+        flex-direction: column;
+        margin-top: -25px;
+    }
 
     h2 {
         padding-bottom: 24px;
@@ -21,14 +30,19 @@
         align-items: center;
         justify-content: center;
         gap: 1%;
-        row-gap: 1px;
-        overflow: hidden;
-        flex-wrap: wrap;
+        row-gap: 1%;
+        overflow: visible;
+        padding-left: 0;
+
+        @media (min-width: $mobile) and (max-width: $tablet) {
+            padding: 0;
+            row-gap: 1%;
+        }
 
         img {
             max-width: 300px;
             width: 100%;
-            border-radius: 12px;
+            border-radius: 20px;
             transition: .4s;
 
             &:hover {

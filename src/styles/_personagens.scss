@@ -1,5 +1,14 @@
+@use "variables" as *;
+
 .personagens {
     padding: 5.6vw;
+
+    @media (min-width: $mobile) and (max-width: $tablet) {
+        padding: calc(5.6vw + 25px);
+        display: flex;
+        flex-direction: column;
+        margin-top: -25px;
+    }
 
     &__heading {
         text-align: center;
@@ -7,7 +16,6 @@
     }
 
     &__card-container {
-
         width: 100%;
         margin-top: 2rem;
         display: flex;
@@ -22,6 +30,11 @@
             border-radius: 1rem;
             overflow: hidden;
             cursor: pointer;
+
+            @media (min-width: $mobile) and (max-width: $tablet) {
+                width: 180px;
+                height: 180px;
+            }
 
             img {
                 grid-area: 1/1;

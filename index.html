@@ -4,187 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Thrones</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__container">
-            <h1>
+
+    <header class="navbar navbar-expand-lg header" id="cabecalho">
+        <div class="header__container ">
+            <h1 class="header__logo">
                 <img class="header__logo" src="./dist/images/got-logo.png" alt="Game of Thrones">
             </h1>
-            <ul class="header__links">
-                <li class="header__links__item">
-                    <a class="button button--now" href="./index.html">Assista agora</a>
+            <button id="menu-hamburguer" name="menu-hamburguer" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <nav class="navbar-collapse justify-content-end collapse header__links" id="menu-nav">
+            <ul class="nav nav-pills">
+                <li class="nav-item fw-bold header__links__item">
+                    <a class="nav-link button button--now" href="#cabecalho">
+                        Assista Agora
+                    </a>
                 </li>
-                <li class="header__links__item">
-                    <a class="button button--dark" href="#sinopse">Sinopse</a>
+                <li class="nav-item fw-bold header__links__item">
+                    <a class="nav-link button button--dark" href="#sinopse">
+                        Sinopse
+                    </a>
+                    </li>
+                <li class="nav-item fw-bold header__links__item">
+                    <a class="nav-link button button--dark" href="#personagens">
+                        Personagens
+                    </a>
                 </li>
-                <li class="header__links__item">
-                    <a class="button button--dark" href="#personagens">Personagens</a>
-                </li>
-                <li class="header__links__item">
-                    <a class="button button--dark" href="#houses">Casas</a>
+                <li class="nav-item fw-bold header__links__item">
+                    <a class="nav-link button button--dark"  href="#houses">
+                        Casas
+                    </a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero__content">
-            <img class="hero__content__logo" src="./dist/images/logos/game-of-thrones.png" alt="Game of Thrones Conquest">            
-            <div class="hero__content__combo">
-                <img class="hero__content__combo__img" src="./dist/images/logos/hbo-max.svg" alt="HBO Max">
-                <button class="button">Assine agora</button>
-                <span class="text">R$ 34,90/mês*</span>
+    <div data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
+
+        <section class="hero">
+            <div class="hero__content">
+                <img class="hero__content__logo" src="./src/images/logos/game-of-thrones-logo.png" alt="Game of Thrones Conquest">            
+                <div class="hero__content__combo">
+                    <img class="hero__content__combo__img" src="./dist/images/logos/hbo-max.svg" alt="HBO Max">
+                    <button class="button">Assine agora</button>
+                    <span class="text">R$ 34,90/mês*</span>
+                </div>
+                <p class="text--small">
+                    *Os preços podem variar caso a assinatura seja feita através de outras plataformas.
+                </p>
             </div>
-            <p class="text--small">
-                *Os preços podem variar caso a assinatura seja feita através de outras plataformas.
-            </p>
-        </div>
-        <div class="hero__content">
-            <img class="hero__content__img" src="./src/images/hero.jpg" alt="Drogon de Game of Thrones">
-        </div>
-    </section>
-
-    <section class="sinopse" id="sinopse">
-        <img src="./dist/images/casas/the-iron-throne.jpg" alt="O trono de ferro">
-        <div class="sinopse__text-container">
-            <h2 class="title">Sinopse</h2>
-            <p class="text--big">
-                GoT se baseia na série de romances de fantasia "Crônicas de gelo e fogo", de George R. R. Martin.
-                O primeiro livro, publicado nos EUA em 1996, se chama justamente "Game of thrones"/"Guerra dos tronos".
-            </p>
-            <p class="text--big">
-                Game of Thrones conta a história de um lugar onde uma força destruiu o equilíbrio das estações, há muito tempo.
-                Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as forças sobrenaturais
-                correm as portas do Reino dos Sete Reinos.
-            </p>
-            <p class="text--big">
-                O foco central de GoT acomapanha o jogo político em Westeros, o continente de um mundo fantástico onde há regiões 
-                governadas por Casas nobres. Há sete reinos que estão sob a liderança do rei ocupante do Trono de Ferro,
-                uma posição alta e desejada entre boa parte das famílias.
-            </p>
-        </div>
-    </section>
-
-    <section class="personagens" id="personagens">
-        <div class="personagens__heading">
-            <span class="title--small">Conheça os</span>
-            <h2 class="title">Personagens Principais</h2>
-        </div>
-        <div class="personagens__card-container">
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/arya.jpeg" alt="Arya Stark">
-                    <figcaption>Arya Stark</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/brandon.jpeg" alt="Brandon Stark">
-                    <figcaption>Brandon Stark</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/catelyn.jpeg" alt="Catelyn Stark">
-                    <figcaption>Catelyn Stark</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/robb.jpeg" alt="Robb Stark">
-                    <figcaption>Robb Stark</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/sansa.jpeg" alt="Sansa Stark">
-                    <figcaption>Sansa Stark</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/cersei.jpeg" alt="Cersei Lannister">
-                    <figcaption>Cersei Lannister</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/jaime.jpeg" alt="Jaime Lannister">
-                    <figcaption>Jaime Lannister</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/joffrey.jpeg" alt="Joffrey Baratheon">
-                    <figcaption>Joffrey Baratheon</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/tyrion.jpeg" alt="Tyrion Lannister">
-                    <figcaption>Tyrion Lannister</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/hound.jpeg" alt="The Hound">
-                    <figcaption>The Hound</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/jon.jpeg" alt="Jon Snow">
-                    <figcaption>Jon Snow</figcaption>
-                </figure>
-                <figure class="personagens__card-container__item">
-                    <img src="./dist/images/personagens/daenerys.jpeg" alt="Daenerys Targaryen">
-                    <figcaption>Daenerys Targaryen</figcaption>
-                </figure>
+            <div>
+                <img class="hero__content__img" src="./src/images/hero.jpg" alt="Drogon de Game of Thrones">
             </div>
-    </section>
+        </section>
 
-    <section class="houses" id="houses">
-        <h2 class="title">Principais Casas</h2>
-        <div>
-            <ul class="houses__content">
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/arryn.jpeg" alt="Casa Arryn">
-                </li>
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/baratheon.jpeg" alt="Casa Baratheon">
-                </li>
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/greyjoy.jpeg" alt="Casa Greyjoy">
-                </li>
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/lannister.jpeg" alt="Casa Lannister">
-                </li>
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/martell.jpeg" alt="Casa Martell">
-                </li>
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/stark.jpeg" alt="Casa Stark">
-                </li>
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/targaryen.jpeg" alt="Casa Targaryen">
-                </li>
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/tully.jpeg" alt="Casa Tully">
-                </li>
-                <li class="houses__content__house">
-                    <img src="./dist/images/casas/tyrell.jpeg" alt="Casa Tyrell">
-                </li>
-            </ul>
-        </div>
-    </section>
+        <section class="sinopse" id="sinopse">
+            <img src="./dist/images/casas/the-iron-throne.jpg" alt="O trono de ferro">
+            <div class="sinopse__text-container">
+                <h2 class="title">Sinopse</h2>
+                <p class="text--big">
+                    GoT se baseia na série de romances de fantasia "As Crônicas de Gelo e Fogo", de George R. R. Martin.
+                    O primeiro livro, publicado nos EUA em 1996, se chama justamente "Game of Thrones"/"A Guerra dos Tronos".
+                </p>
+                <p class="text--big">
+                    Game of Thrones conta a história de um lugar onde uma força destruiu o equilíbrio das estações, há muito tempo.
+                    Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as forças sobrenaturais
+                    correm as portas dos Sete Reinos.
+                </p>
+                <p class="text--big">
+                    O foco central de GoT acompanha o jogo político em Westeros, o continente de um mundo fantástico onde há regiões 
+                    governadas por casas nobres. Há sete reinos que estão sob a liderança do rei ocupante do Trono de Ferro,
+                    uma posição alta e desejada entre boa parte das famílias.
+                </p>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <div class="footer__container">
-            <img class="footer__logo" src="./dist/images/got-logo.png" alt="Game of Thrones">
-            <ul class="footer__links">
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                </li>
-                <li class="footer__links__item">
-                    <a href="#" class="text--small">
-                        <i class="bi bi-github"></i>    
-                    </a>
-                </li>
-            </ul>
-            <p class="text--small">
-                ® 2023 Guilherme Camargo. Todos os direitos reservados.
-            </p>
-            <p class="text--small">
-                Página desenvolvida no curso de Desenvolvimento Full Stack Python na EBAC - Escola Britânica de Artes Criativas e Tecnologia.              
-            </p>
-        </div>
-    </footer>
+        <section class="personagens" id="personagens">
+            <div class="personagens__heading">
+                <span class="title--small">Conheça os</span>
+                <h2 class="title">Personagens Principais</h2>
+            </div>
+            <div class="personagens__card-container">
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/arya.jpeg" alt="Arya Stark">
+                        <figcaption>Arya Stark</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/brandon.jpeg" alt="Brandon Stark">
+                        <figcaption>Brandon Stark</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/catelyn.jpeg" alt="Catelyn Stark">
+                        <figcaption>Catelyn Stark</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/robb.jpeg" alt="Robb Stark">
+                        <figcaption>Robb Stark</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/sansa.jpeg" alt="Sansa Stark">
+                        <figcaption>Sansa Stark</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/cersei.jpeg" alt="Cersei Lannister">
+                        <figcaption>Cersei Lannister</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/jaime.jpeg" alt="Jaime Lannister">
+                        <figcaption>Jaime Lannister</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/joffrey.jpeg" alt="Joffrey Baratheon">
+                        <figcaption>Joffrey Baratheon</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/tyrion.jpeg" alt="Tyrion Lannister">
+                        <figcaption>Tyrion Lannister</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/hound.jpeg" alt="The Hound">
+                        <figcaption>The Hound</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/jon.jpeg" alt="Jon Snow">
+                        <figcaption>Jon Snow</figcaption>
+                    </figure>
+                    <figure class="personagens__card-container__item">
+                        <img src="./dist/images/personagens/daenerys.jpeg" alt="Daenerys Targaryen">
+                        <figcaption>Daenerys Targaryen</figcaption>
+                    </figure>
+                </div>
+        </section>
 
+        <section class="houses" id="houses">
+            <span class="title--small">Conheça as</span>
+            <h2 class="title">Principais Casas</h2>
+            <div>
+                <ul class="houses__content">
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/arryn.jpeg" alt="Casa Arryn">
+                    </li>
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/baratheon.jpeg" alt="Casa Baratheon">
+                    </li>
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/greyjoy.jpeg" alt="Casa Greyjoy">
+                    </li>
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/lannister.jpeg" alt="Casa Lannister">
+                    </li>
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/martell.jpeg" alt="Casa Martell">
+                    </li>
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/stark.jpeg" alt="Casa Stark">
+                    </li>
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/targaryen.jpeg" alt="Casa Targaryen">
+                    </li>
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/tully.jpeg" alt="Casa Tully">
+                    </li>
+                    <li class="houses__content__house">
+                        <img src="./dist/images/casas/tyrell.jpeg" alt="Casa Tyrell">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <img class="footer__logo" src="./dist/images/got-logo.png" alt="Game of Thrones">
+                <ul class="footer__links">
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="footer__links__item">
+                        <a href="#" class="text--small">
+                            <i class="bi bi-github"></i>    
+                        </a>
+                    </li>
+                </ul>
+                <p class="text--small">
+                    ® 2023 Guilherme Camargo. Todos os direitos reservados.
+                </p>
+                <p class="text--small">
+                    Página desenvolvida no curso de Desenvolvimento Full Stack Python na EBAC - Escola Britânica de Artes Criativas e Tecnologia.              
+                </p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./dist/js/main.js"></script>
 </body>
 </html>

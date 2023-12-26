@@ -63,7 +63,7 @@ body {
     }
 
     &--now {
-        background-color: rgba($corButtonPrimario, 0.8);
+        background-color: rgba($corButtonNow, 0.5);
         border-color: $corTextoSecundario;
 
         &:hover {

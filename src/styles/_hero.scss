@@ -21,11 +21,13 @@
         max-width: 1024px;
         align-items: center;
         padding: 5px;
+        
 
         &__logo {
-            width: 450px;
-            margin-bottom: 36px;
-            margin-top: 90px;
+            max-width: 700px;
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 50px;
         }
 
         &__combo {
@@ -36,8 +38,9 @@
             padding-top: 60px;
 
             &__img {
-                width: 300px;
+                width: 250px;
             }
+            
             .button {
                 width: 300px;
             }
@@ -47,12 +50,13 @@
             margin-bottom: 26px;
 
             &:last-child {
-                margin-top: 60px;
+                margin-top: 30px;
             }
         }
 
         &__img {
             width: 100%;
+            margin-left: 50px;
         }
     }
 }

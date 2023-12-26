@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of Thrones</title>
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>Olá</h1>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/got_logo.jpg" alt="Game of Thrones">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--now" href="#">Assista agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#">Sinopse</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#">Personagens</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <h3 class="title--small">
+                A série mais aclamada, de George R.R Martin
+            </h3>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <img class="hero__content__combos__combo__img--1" src="./dist/images/logos/hbo-max.svg" alt="HBO Max">
+                    <button class="button">Assine agora</button>
+                    <span class="text">R$ 34,90/mês*</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <img class="hero__content__combos__combo__img--2" src="./dist/images/logos//got-conquest.png" alt="Game of Thrones Conquest">
+                    <button class="button">Joque agora</button>
+                    <span class="text">FREE</span>
+                </li>
+            </ul>
+            <p class="text--small">
+                *Os preços podem variar caso a assinatura seja feita através de outras plataformas.
+            </p>
+        </div>
+        <div class="hero__content">
+            <img class="hero__content__img" src="./src/images/hero.jpg" alt="Drogon de Game of Thrones">
+        </div>
+    </section>
+
 </body>
 </html>

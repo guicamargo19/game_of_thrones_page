@@ -10,6 +10,13 @@
         margin-top: -25px;
     }
 
+    @media (max-width: 768px) {
+        padding: calc(5.6vw + 25px);
+        display: flex;
+        flex-direction: column;
+        margin-top: -25px;
+    }
+
     &__heading {
         text-align: center;
         padding-bottom: 24px;
@@ -24,6 +31,19 @@
         align-items: center;
         justify-content: center;
         
+        @media (max-width: 768px) {
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            scroll-padding-left: 20px;
+            display: grid;
+            width: 100%;
+            grid-auto-flow: column;
+            padding-left: 20px;
+            padding-right: 4px;
+            align-items: normal;
+            justify-content: flex-start;
+        }
+        
         &__item {
             width: 350px;
             height: 350px;
@@ -34,6 +54,12 @@
             @media (min-width: $mobile) and (max-width: $tablet) {
                 width: 180px;
                 height: 180px;
+            }
+
+            @media (max-width: 768px) {
+                width: 250px;
+                height: 175px;
+                scroll-snap-align: start;
             }
 
             img {
@@ -58,6 +84,10 @@
                 -webkit-mask: linear-gradient(#eee 0 0), linear-gradient(#eee 0 0);
                 -webkit-mask-composite: xor;
                 -webkit-mask-clip: text, padding-box;
+
+                @media (max-width: 768px) {
+                    margin: 0;
+                }
             }
         
             &:hover figcaption{

@@ -7,15 +7,17 @@
     align-items: center;
 
     @media (max-width: 768px) {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        padding: calc(5.6vw + 25px);
+        margin-top: -25px;
     }
 
     @media (min-width: $mobile) and (max-width: $tablet) {
         display: flex;
         flex-direction: column;
-        padding-top: calc(5.6vw + 25px);
+        padding: calc(5.6vw + 25px);
         margin-top: -25px;
-
     }
 
     img {
@@ -35,6 +37,11 @@
             margin-bottom: 24px;
 
             @media (min-width: $mobile) and (max-width: $tablet) {
+                text-align: center;
+                margin-top: 12px;
+            }
+
+            @media (max-width: 768px) {
                 text-align: center;
                 margin-top: 12px;
             }

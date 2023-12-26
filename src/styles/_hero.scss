@@ -8,8 +8,11 @@
     text-align: center;
 
     @media (max-width: 768px) {
-        padding-top: calc(50vw + 25px);
-        margin-top: -55px;
+        padding: calc(5.6vw + 25px);
+        display: flex;
+        flex-direction: column;
+        margin-top: -25px;
+        min-height: 0;
     }
 
     @media (min-width: $mobile) and (max-width: $tablet) {
@@ -35,7 +38,11 @@
             @media (min-width: $mobile) and (max-width: $tablet) {
                 margin-top: 10px;
                 margin-bottom: 5px;
-             }
+            }
+
+            @media (max-width: 768px) {
+                margin-top: 35px;
+            }
         }
 
         &__combo {
@@ -47,14 +54,22 @@
 
             @media (min-width: $mobile) and (max-width: $tablet) {
                 padding-top: 5px;
-             }
+            }
+
+            @media (max-width: 768px) {
+                padding-top: 20px;
+            }
 
             &__img {
                 width: 250px;
 
                 @media (min-width: $mobile) and (max-width: $tablet) {
                     width: 200px;
-                 }
+                }
+
+                @media (max-width: 768px) {
+                    width: 120px;
+                }
             }
             
             .button {
@@ -69,6 +84,14 @@
                     padding: 0;
                     border: none;
                  }
+
+                @media (max-width: 768px) {
+                    width: 220px;
+                    height: 40px;
+                    font-size: 10px;
+                    padding: 0;
+                    border: none;
+                }
             }
         }
 
@@ -90,7 +113,11 @@
 
             @media (min-width: $mobile) and (max-width: $tablet) {
                 margin: 20px;
-             }  
+            }
+
+            @media (max-width: 768px) {
+                margin: 5px;
+            }  
         }
     }
 }

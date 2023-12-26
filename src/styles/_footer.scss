@@ -16,7 +16,7 @@
     }
 
     &__logo {
-        width: 80px;
+        width: 120px;
         margin: 0 auto 10px;
     }
 
@@ -25,15 +25,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
         
         &__item {
             display: inline-block;
-
+            
             a {
                 text-decoration: none;
                 padding: 8px 16px;
                 display: block;
+                font-size: 25px;
 
                 &:hover {
                     color: $corTextoSecundario;
@@ -51,8 +51,7 @@
     align-items: center;
 
     img {
-        height: 20px;
-        width: 20px;
+        width: 22px;
         padding-right: 8px;
     }
 

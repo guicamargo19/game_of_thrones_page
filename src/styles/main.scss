@@ -87,7 +87,7 @@ body {
 .text--big {
     @include text(18px);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         @include text(15px);
     }
 }
@@ -96,7 +96,7 @@ body {
     @include text(16px);
     font-weight: bold;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         @include text(14px);
     }
 }
@@ -104,7 +104,7 @@ body {
 .text--small {
     @include text(12px);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         @include text(11px);
     }
 }
@@ -118,7 +118,7 @@ body {
 .title--big {
     @include title(44px);
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         @include title(26px);
     }
 }
@@ -126,7 +126,7 @@ body {
 .title {
     @include title;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         @include title(24px);
     }
 }
@@ -135,7 +135,7 @@ body {
     @include title(28px);
     color: $corBranca;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         @include title(22px);
     }
 }

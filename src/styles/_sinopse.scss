@@ -6,7 +6,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
         padding: calc(5.6vw + 25px);
@@ -41,7 +41,7 @@
                 margin-top: 12px;
             }
 
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                 text-align: center;
                 margin-top: 12px;
             }

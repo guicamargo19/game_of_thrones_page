@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+.sinopse {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text-container {
+        padding: 0 2vw;
+        text-align: justify;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+
+        p {
+            padding-top: 12px;
+        }
+
+    }
+}

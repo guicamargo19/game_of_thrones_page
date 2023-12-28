@@ -10,7 +10,7 @@
         display: flex;
         flex-direction: column;
         padding: calc(5.6vw + 25px);
-        margin-top: -25px;
+        margin-top: -55px;
     }
 
     @media (min-width: $mobile) and (max-width: $tablet) {
@@ -43,7 +43,7 @@
 
             @media (max-width: 767px) {
                 text-align: center;
-                margin-top: 12px;
+                margin-top: 50px;
             }
         }
 

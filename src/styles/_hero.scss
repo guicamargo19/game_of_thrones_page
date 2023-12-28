@@ -103,7 +103,11 @@
 
                 @media (min-width: $mobile) and (max-width: $tablet) {
                     margin-top: 10px;
-                 }
+                }
+
+                @media (max-width: 767px) {
+                    margin-bottom: 0;
+                }  
             }
         }
 
@@ -116,7 +120,7 @@
             }
 
             @media (max-width: 767px) {
-                margin: 5px;
+                display: none;
             }  
         }
     }

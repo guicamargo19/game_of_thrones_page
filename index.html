@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <!-- CABEÇALHO -->
     <header class="navbar navbar-expand-lg header" id="cabecalho">
         <div class="header__container ">
             <h1 class="header__logo">
@@ -45,8 +46,10 @@
         </nav>
     </header>
 
+    <!-- SPY -->
     <div data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
 
+        <!-- SECTION HERO -->
         <section class="hero" id="hero">
             <div class="hero__content">
                 <img class="hero__content__logo" src="./src/images/logos/game-of-thrones-logo.png" alt="Game of Thrones Conquest">            
@@ -64,6 +67,7 @@
             </div>
         </section>
 
+        <!-- SECTION SINOPSE -->
         <section class="sinopse">
             <img src="./dist/images/casas/the-iron-throne.jpg" alt="O trono de ferro">
             <div class="sinopse__text-container">
@@ -85,6 +89,110 @@
             </div>
         </section>
 
+        <!-- CAROUSEL MOBILE -->
+        <div id="personagens-mobile" class="personagens-mobile carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="personagens-mobile__heading">
+                <span class="title--small">Conheça os</span>
+                <h2 class="title">Personagens Principais</h2>
+            </div>
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./dist/images/personagens/arya.jpeg" alt="Arya Stark"/>
+                    <div class="carousel-caption">
+                        <h2>Arya Stark</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/brandon.jpeg" alt="Brandon Stark"/>
+                    <div class="carousel-caption">
+                        <h2>Brandon Stark</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/catelyn.jpeg" alt="Catelyn Stark"/>
+                    <div class="carousel-caption">
+                        <h2>Catelyn Stark</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/robb.jpeg" alt="Robb Stark"/>
+                    <div class="carousel-caption">
+                        <h2>Robb Stark</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/sansa.jpeg" alt="Sansa Stark"/>
+                    <div class="carousel-caption">
+                        <h2>Sansa Stark</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/cersei.jpeg" alt="Cersei Lannister"/>
+                    <div class="carousel-caption">
+                        <h2>Cersei Lannister</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/jaime.jpeg" alt="Jaime Lannister"/>
+                    <div class="carousel-caption">
+                        <h2>Jaime Lannister</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/joffrey.jpeg" alt="Joffrey Baratheon"/>
+                    <div class="carousel-caption">
+                        <h2>Joffrey Baratheon</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/tyrion.jpeg" alt="Tyrion Lannisterk"/>
+                    <div class="carousel-caption">
+                        <h2>Tyrion Lannister</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/hound.jpeg" alt="The Hound"/>
+                    <div class="carousel-caption">
+                        <h2>The Hound</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/jon.jpeg" alt="Jon Snow"/>
+                    <div class="carousel-caption">
+                        <h2>Jon Snow</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./dist/images/personagens/daenerys.jpeg" alt="Daenerys Targaryen"/>
+                    <div class="carousel-caption">
+                        <h2>Daenerys Targaryen</h2>
+                    </div>
+                </div>
+            </div>
+           <button data-bs-target="#personagens-mobile" data-bs-slide="prev" class="carousel-control-prev" type="button">
+              <span class="carousel-control-prev-icon"></span>
+           </button>
+           <button data-bs-target="#personagens-mobile" data-bs-slide="next" class="carousel-control-next" type="button">
+              <span class="carousel-control-next-icon"></span>
+           </button>
+           <div class="carousel-indicators">
+              <button type="button" class="active" data-bs-target="#personagens-mobile" data-bs-slide-to="0"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="5"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="6"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="7"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="8"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="9"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="10"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="11"></button>
+              <button type="button" data-bs-target="#personagens-mobile" data-bs-slide-to="12"></button>
+            </div>
+        </div>
+         
+        <!-- SECTION PERSONAGENS -->
         <section class="personagens" id="personagens">
             <div class="personagens__heading">
                 <span class="title--small">Conheça os</span>
@@ -142,6 +250,7 @@
             </div>
         </section>
 
+        <!-- SECTION HOUSES -->
         <section class="houses" id="houses">
             <span class="title--small">Conheça as</span>
             <h2 class="title">Principais Casas</h2>
@@ -176,6 +285,7 @@
             </ul>
         </section>
 
+        <!-- FOOTER -->
         <footer class="footer">
             <div class="footer__container">
                 <img class="footer__logo" src="./dist/images/got-logo.png" alt="Game of Thrones">
@@ -202,6 +312,5 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./dist/js/main.js"></script>
 </body>
 </html>

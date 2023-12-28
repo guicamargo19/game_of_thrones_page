@@ -6,13 +6,13 @@
 
 <ul>
     <li>HTML5 e CSS3</li>
-    <p>Utilizando elementos HTML5 com estilização em CSS3</p><br>
+    <p>Utilizando elementos HTML5 com estilização em CSS3.</p><br>
     <li>Bootstrap</li>
-    <p>Classes Bootstrap aplicados para Navbar e Carrosel de imagens para melhor visualizações de conteúdo em Mobile</p><br>
+    <p>Classes Bootstrap aplicadas para Navbar e Carrosel de imagens para melhor visualização do conteúdo em Mobile.</p><br>
     <li>Gulp</li>
-    <p>Automatização de tarefas para ambiente de desenvolvimento e de produção</p><br>
+    <p>Automatização de tarefas para ambientes de desenvolvimento e de produção.</p><br>
     <li>SASS</li>
-    <p>Utilziação de SASS como pré-processor CSS para minificação de imagens e arquivos</p><br>
+    <p>Utilização de SASS como pré-processador CSS para minificação de imagens e arquivos.</p><br>
     <li>Metodologia BEM</li>
-    <p>Aplicaçao da metodologia BEM visando melhor manutenção do código e boas práticas de programação.</p>
+    <p>Boas práticas de programação com metodologia BEM visando melhor manutenção do código.</p>
 </ul>

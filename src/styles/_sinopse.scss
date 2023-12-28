@@ -26,6 +26,7 @@
 
         @media (min-width: $mobile) and (max-width: $tablet) {
             width: 70%;
+            padding-bottom: 24px;
         }
     }
 
@@ -49,6 +50,7 @@
 
         p {
             padding-top: 12px;
+            text-indent: 20px;
         }
 
     }

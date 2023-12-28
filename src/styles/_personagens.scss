@@ -118,12 +118,14 @@
     width: 100%;
     display: none;
     z-index: 0;
+    margin-bottom: 48px;
 
     @media (max-width: 767px) {
         display: block;
 
         &__heading {
             text-align: center;
+            padding-bottom: 24px;
         }
 
         .carousel-inner {

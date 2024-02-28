@@ -57,7 +57,7 @@ Para ambiente de produção, utilizamos o comando build:
 * **NPM** - Gerenciador de pacotes padrão para o ambiente de tempo de execução JavaScript Node.JS.
 * **Bootstrap** - Framework web open-source para desenvolvimento de componentes de interface para sites e aplicações web.
 * **SASS** - Pré-processador CSS, "Syntactically Awesome Style Sheets" é uma linguagem de folhas de estilo.
-* **GULP** - Ferramenta de automação de tarefas em JavaScript.
+* **GULP** - Ferramenta de automatização de tarefas em JavaScript.
 * **Metodologia BEM** - Block Element Modifier, é uma forma de organizar o código CSS para solucionar problemas frequentes no desenvolvimento web.
 
 ## ✒️ Autor

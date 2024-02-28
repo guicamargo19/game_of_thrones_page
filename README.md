@@ -1,10 +1,10 @@
 # Game of Thrones Site
 
-Site criado com HTML e CSS, com classes Bootstrap na aplicação de Navbar e Carrossel de imagens, para melhor visualização do conteúdo em Móbile e SASS como
-pré-processador CSS. Este projeto possui automaticação de tarefas em Gulp, para ambiente de produção e desenvolvimento, com compilação do SASS
-e minificação de imagens e arquivos.
+Site criado com **HTML** e **CSS**, com classes **Bootstrap** na aplicação de Navbar e Carrossel de imagens, para melhor visualização
+do conteúdo em Móbile e **SASS** como pré-processador CSS. Este projeto possui automatização de tarefas com **Gulp**, para ambiente de
+produção e desenvolvimento, com compilação do SASS e minificação de imagens e arquivos.
 
-Este projeto foi realizado com a aplicação da Metodologia BEM em toda estrutura do projeto, buscando aplicar as melhoras práticas de programação para desenvolvimento web.
+Este projeto foi realizado com a aplicação da **Metodologia BEM** em toda a sua estrutura, buscando aplicar as melhoras práticas de programação para desenvolvimento web.
 
 Projeto desenvolvido no curso de Full Stack Python da EBAC - Escola Britânica de Artes Criativas e Tecnologia.
 

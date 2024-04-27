@@ -65,6 +65,7 @@
 
             .button {
                 height: 50px;
+                font-weight: 400 !important;
         
                 @media (max-width: 767px) {
                     font-size: 13px;
@@ -74,7 +75,6 @@
                 }
         
                 @media (min-width: $mobile) and (max-width: $tablet) {
-                    font-size: 13px;
                     font-size: 13px;
                     height: 40px;
                     letter-spacing: 0;

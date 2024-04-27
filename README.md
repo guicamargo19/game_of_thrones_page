@@ -1,4 +1,4 @@
-# Game of Thrones Site
+# Game of Thrones Page
 
 ## Apresentação do projeto
 

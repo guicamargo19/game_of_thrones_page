@@ -1,6 +1,8 @@
 # Game of Thrones Site
 
-<img src="./src/images/game.png">
+## Apresentação do projeto
+
+
 
 Site criado com **HTML** e **CSS**, com classes **Bootstrap** na aplicação de Navbar e Carrossel de imagens, para
 melhor visualização do conteúdo em Mobile e **SASS** como pré-processador CSS. Este projeto possui automatização de

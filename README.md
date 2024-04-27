@@ -2,7 +2,7 @@
 
 ## Apresentação do projeto
 
-
+https://github.com/guicamargo19/game_of_thrones_page/assets/133445061/6aab42c5-a9d8-4457-87cf-0bb54c97296c
 
 Site criado com **HTML** e **CSS**, com classes **Bootstrap** na aplicação de Navbar e Carrossel de imagens, para
 melhor visualização do conteúdo em Mobile e **SASS** como pré-processador CSS. Este projeto possui automatização de
